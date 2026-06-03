@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use — DexGuide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:       #0f1117;
+      --ink-soft:  #4a4f5e;
+      --ink-faint: #8a8f9e;
+      --rule:      #e4e6ed;
+      --accent:    #1a9a60;
+      --accent-lt: #e8f7f1;
+      --bg:        #fafafa;
+      --card:      #ffffff;
+      --radius:    12px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── HEADER ── */
+    header {
+      border-bottom: 1px solid var(--rule);
+      background: var(--card);
+      padding: 0 24px;
+    }
+
+    .header-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+      gap: 16px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+
+    .logo-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 20px;
+      color: var(--ink);
+      letter-spacing: -0.3px;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-lt);
+      padding: 4px 10px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--card);
+      border-bottom: 1px solid var(--rule);
+      padding: 56px 24px 48px;
+    }
+
+    .hero-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .hero-eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.12;
+      letter-spacing: -0.5px;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+
+    .hero-meta {
+      font-size: 14px;
+      color: var(--ink-faint);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .hero-meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    /* ── SUMMARY CARDS ── */
+    .summary {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 0;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+    }
+
+    .summary-card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      padding: 20px 18px;
+    }
+
+    .summary-card .icon {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .summary-card strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .summary-card p {
+      font-size: 13px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+    }
+
+    /* ── MAIN CONTENT ── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section {
+      margin-bottom: 52px;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 24px;
+      color: var(--ink);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule);
+      letter-spacing: -0.2px;
+    }
+
+    p {
+      color: var(--ink-soft);
+      margin-bottom: 16px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px;
+    }
+
+    ul li {
+      color: var(--ink-soft);
+      padding: 6px 0 6px 22px;
+      position: relative;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    a:hover { border-color: var(--accent); }
+
+    .highlight-box {
+      background: var(--accent-lt);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+    }
+
+    .highlight-box p {
+      color: #1a5c3a;
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .warning-box {
+      background: #fff8e8;
+      border-left: 3px solid #e6a817;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+    }
+
+    .warning-box p {
+      color: #7a5000;
+      margin: 0;
+      font-size: 15px;
+    }
+
+    /* ── CONTACT CARD ── */
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      padding: 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .contact-card .icon-wrap {
+      width: 44px;
+      height: 44px;
+      background: var(--accent-lt);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 20px;
+    }
+
+    .contact-card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .contact-card p {
+      font-size: 14px;
+      color: var(--ink-soft);
+      margin: 0;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 28px 24px;
+    }
+
+    .footer-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-inner p {
+      font-size: 13px;
+      color: var(--ink-faint);
+      margin: 0;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: var(--ink-faint);
+    }
+
+    @media (max-width: 600px) {
+      .hero { padding: 36px 20px 32px; }
+      main { padding: 36px 20px 60px; }
+      .summary { padding: 28px 20px 0; }
+      .contact-card { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="10" cy="10" r="9" stroke="#fff" stroke-width="1.5" fill="none"/>
+          <path d="M1 10h18M10 10a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="logo-name">DexGuide</span>
+    </a>
+    <span class="badge">Terms of Use</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Legal</p>
+    <h1>Terms of Use</h1>
+    <div class="hero-meta">
+      <span><span class="dot"></span> Effective: 1 June 2026</span>
+      <span><span class="dot"></span> Last updated: 1 June 2026</span>
+      <span><span class="dot"></span> App: DexGuide for iOS</span>
+    </div>
+  </div>
+</div>
+
+<!-- SUMMARY CARDS -->
+<div class="summary">
+  <div class="summary-grid">
+    <div class="summary-card">
+      <div class="icon">📖</div>
+      <strong>Fan-made reference app</strong>
+      <p>DexGuide is unofficial and not affiliated with Nintendo or The Pokémon Company.</p>
+    </div>
+    <div class="summary-card">
+      <div class="icon">✅</div>
+      <strong>Free to use</strong>
+      <p>Core features are free. Pro features require a subscription or one-time purchase.</p>
+    </div>
+    <div class="summary-card">
+      <div class="icon">⚠️</div>
+      <strong>Data accuracy</strong>
+      <p>Game data is compiled by hand. We aim for accuracy but cannot guarantee it.</p>
+    </div>
+    <div class="summary-card">
+      <div class="icon">🍎</div>
+      <strong>Apple handles billing</strong>
+      <p>All purchases go through the App Store. Apple's terms govern refunds.</p>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main>
+
+  <section>
+    <h2>1. Acceptance of Terms</h2>
+    <p>By downloading, installing, or using DexGuide ("the App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.</p>
+    <p>These Terms apply to all users of DexGuide, including free and Pro subscribers. We may update these Terms from time to time. Continued use of the App after changes are posted constitutes acceptance of the revised Terms.</p>
+  </section>
+
+  <section>
+    <h2>2. About DexGuide</h2>
+    <div class="highlight-box">
+      <p>DexGuide is an unofficial fan companion app for classic Pokémon games (Generations II–IV). It is not affiliated with, endorsed by, or connected to Nintendo, Game Freak, or The Pokémon Company.</p>
+    </div>
+    <p>All game data, walkthrough content, and reference material in DexGuide is written from scratch by DexGuide contributors and is based on publicly available information about the games. DexGuide does not reproduce official game text, official artwork, or any proprietary content owned by Nintendo, Game Freak, or The Pokémon Company.</p>
+    <p>Pokémon and all related names are trademarks of Nintendo / Creatures Inc. / GAME FREAK inc. Use of these names is purely for identification and reference purposes (nominative fair use).</p>
+  </section>
+
+  <section>
+    <h2>3. Eligibility</h2>
+    <p>DexGuide is rated 4+ on the App Store and is available to users of all ages. If you are under the age of 13 (or the applicable age of digital consent in your country), you must have the permission of a parent or guardian to use the App and to make any in-app purchases.</p>
+    <p>By using the App, you confirm that you are either of legal age in your jurisdiction or have obtained parental consent.</p>
+  </section>
+
+  <section>
+    <h2>4. Licence to Use the App</h2>
+    <p>We grant you a personal, non-exclusive, non-transferable, revocable licence to use DexGuide on any Apple device you own or control, subject to these Terms and the Apple App Store Terms of Service.</p>
+    <p>You may not:</p>
+    <ul>
+      <li>Copy, modify, or distribute the App or its content</li>
+      <li>Reverse engineer, decompile, or disassemble the App</li>
+      <li>Use the App for any commercial purpose without our written consent</li>
+      <li>Attempt to extract or scrape the App's data files or database</li>
+      <li>Use the App in any way that violates applicable law</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. In-App Purchases and Subscriptions</h2>
+    <p>DexGuide offers the following paid options via Apple's App Store:</p>
+    <ul>
+      <li><strong>Monthly subscription</strong> — billed monthly, cancel anytime</li>
+      <li><strong>Yearly subscription</strong> — billed annually, includes a 7-day free trial on first purchase</li>
+      <li><strong>Lifetime purchase</strong> — one-time payment, permanent Pro access</li>
+    </ul>
+    <p>All purchases are processed by Apple. We do not store your payment information. Prices are displayed in your local currency at the time of purchase and may vary by region.</p>
+    <p><strong>Free trial:</strong> The yearly subscription includes a 7-day free trial for new subscribers. You will not be charged during the trial period. If you do not cancel before the trial ends, the annual subscription fee will be charged to your Apple ID.</p>
+    <p><strong>Cancellation:</strong> You may cancel a subscription at any time via your iOS Settings → [Your name] → Subscriptions. Cancellation takes effect at the end of the current billing period. You retain Pro access until that date.</p>
+    <p><strong>Refunds:</strong> All refund requests are handled by Apple in accordance with their refund policy. We have no ability to issue refunds directly. To request a refund, visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</p>
+    <p><strong>Lifetime purchase:</strong> A lifetime purchase grants permanent access to Pro features as they exist at the time of purchase, and includes all future Pro features added to the App. A lifetime purchase is non-refundable except as required by Apple's policies or applicable law.</p>
+    <p><strong>Price changes:</strong> We reserve the right to change subscription pricing. You will be notified in advance of any price change, and existing subscribers will not be charged the new price without explicit agreement.</p>
+  </section>
+
+  <section>
+    <h2>6. Accuracy of Game Data</h2>
+    <div class="warning-box">
+      <p>DexGuide is a fan-compiled reference. While we strive for accuracy, game data (encounter rates, move details, evolution methods, boss teams) may contain errors or omissions. Do not rely on DexGuide as a definitive source for competitive play or official information.</p>
+    </div>
+    <p>Game data in DexGuide is researched and written by hand from publicly available sources. We correct errors as they are reported and push updates through app releases. If you find an error, please report it to us at <a href="mailto:dexguideapp@gmail.com">dexguideapp@gmail.com</a>.</p>
+    <p>We make no warranty that the data in DexGuide is complete, accurate, or up to date. Use of the data is at your own discretion.</p>
+  </section>
+
+  <section>
+    <h2>7. User-Generated Content</h2>
+    <p>DexGuide allows you to create and store personal content within the App, including saved teams, shiny hunt logs, Nuzlocke run records, and catch progress. This content is stored locally on your device and, for Pro subscribers, synced to your personal iCloud account.</p>
+    <p>You retain full ownership of any content you create within the App. We do not access, transmit, or use your personal in-app content.</p>
+    <p>You are responsible for maintaining backups of your data. We are not liable for loss of user-generated content due to device failure, accidental deletion, iCloud sync errors, or app uninstallation.</p>
+  </section>
+
+  <section>
+    <h2>8. Intellectual Property</h2>
+    <p>The DexGuide app, its code, design, written content, and original assets are the property of the DexGuide developer(s) and are protected by applicable copyright and intellectual property law.</p>
+    <p>Pokémon, the Pokémon logo, and all Pokémon character names and likenesses are trademarks or registered trademarks of Nintendo / Creatures Inc. / GAME FREAK inc. DexGuide makes no claim to these trademarks. Their use in DexGuide is for reference and identification purposes only.</p>
+    <p>If you believe DexGuide infringes any intellectual property rights, please contact us at <a href="mailto:dexguideapp@gmail.com">dexguideapp@gmail.com</a> and we will respond promptly.</p>
+  </section>
+
+  <section>
+    <h2>9. Disclaimer of Warranties</h2>
+    <p>DexGuide is provided "as is" and "as available" without warranty of any kind, express or implied. To the fullest extent permitted by applicable law, we disclaim all warranties including but not limited to:</p>
+    <ul>
+      <li>Fitness for a particular purpose</li>
+      <li>Accuracy or completeness of any game data or content</li>
+      <li>Uninterrupted or error-free operation of the App</li>
+      <li>Compatibility with any specific device or iOS version</li>
+    </ul>
+    <p>We do not warrant that any data errors will be corrected, or that the App or the server that makes it available are free of viruses or other harmful components.</p>
+  </section>
+
+  <section>
+    <h2>10. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by applicable law, the DexGuide developer(s) shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of, or inability to use, the App — including but not limited to loss of data, lost progress in a game, or reliance on inaccurate game data.</p>
+    <p>Our total liability to you for any claim arising from these Terms or your use of the App shall not exceed the amount you paid for the App or in-app purchases in the twelve months preceding the claim.</p>
+    <p>Some jurisdictions do not allow limitations on implied warranties or liability, so the above limitations may not apply to you in full.</p>
+  </section>
+
+  <section>
+    <h2>11. Termination</h2>
+    <p>We reserve the right to suspend or terminate access to DexGuide at our discretion, including in the event of a serious violation of these Terms. In practice, DexGuide is a single-player offline app with no account system, so termination would only apply in the context of a complete removal of the App from the App Store.</p>
+    <p>You may stop using the App at any time by deleting it from your device.</p>
+  </section>
+
+  <section>
+    <h2>12. Third-Party Services</h2>
+    <p>DexGuide integrates the following third-party services:</p>
+    <ul>
+      <li><strong>Apple App Store / StoreKit</strong> — payment processing for in-app purchases</li>
+      <li><strong>Apple iCloud / CloudKit</strong> — optional data sync for Pro subscribers</li>
+      <li><strong>Amplitude</strong> — anonymous usage analytics (no personal data)</li>
+    </ul>
+    <p>Each of these services operates under its own terms and privacy policy. We are not responsible for the practices of these third parties.</p>
+  </section>
+
+  <section>
+    <h2>13. Changes to the App</h2>
+    <p>We reserve the right to modify, suspend, or discontinue any part of DexGuide at any time, including features available to free or Pro users. We will endeavour to give reasonable notice of significant changes via the App or App Store update notes.</p>
+    <p>We are not liable to you or any third party for any modification, suspension, or discontinuation of the App or any part of it.</p>
+  </section>
+
+  <section>
+    <h2>14. Governing Law</h2>
+    <p>These Terms are governed by and construed in accordance with applicable law. If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.</p>
+  </section>
+
+  <section>
+    <h2>15. Contact</h2>
+    <div class="contact-card">
+      <div class="icon-wrap">✉️</div>
+      <div>
+        <h3>Questions about these Terms?</h3>
+        <p>Reach us at <a href="mailto:dexguideapp@gmail.com">dexguideapp@gmail.com</a>. We aim to respond within 7 business days.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <p>© 2026 DexGuide. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Privacy Policy</a>
+      <a href="mailto:dexguideapp@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
