@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — DexGuide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:       #0f1117;
+      --ink-soft:  #4a4f5e;
+      --ink-faint: #8a8f9e;
+      --rule:      #e4e6ed;
+      --accent:    #1a9a60;   /* Emerald — same as the app default game */
+      --accent-lt: #e8f7f1;
+      --bg:        #fafafa;
+      --card:      #ffffff;
+      --radius:    12px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── HEADER ── */
+    header {
+      border-bottom: 1px solid var(--rule);
+      background: var(--card);
+      padding: 0 24px;
+    }
+
+    .header-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+      gap: 16px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+
+    .logo-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 20px;
+      color: var(--ink);
+      letter-spacing: -0.3px;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-lt);
+      padding: 4px 10px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--card);
+      border-bottom: 1px solid var(--rule);
+      padding: 56px 24px 48px;
+    }
+
+    .hero-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .hero-eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.12;
+      letter-spacing: -0.5px;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+
+    .hero-meta {
+      font-size: 14px;
+      color: var(--ink-faint);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .hero-meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    /* ── SUMMARY CARDS ── */
+    .summary {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 0;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+    }
+
+    .summary-card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      padding: 20px 18px;
+    }
+
+    .summary-card .icon {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .summary-card strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .summary-card p {
+      font-size: 13px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+    }
+
+    /* ── MAIN CONTENT ── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section {
+      margin-bottom: 52px;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 24px;
+      color: var(--ink);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule);
+      letter-spacing: -0.2px;
+    }
+
+    p {
+      color: var(--ink-soft);
+      margin-bottom: 16px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px;
+    }
+
+    ul li {
+      color: var(--ink-soft);
+      padding: 6px 0 6px 22px;
+      position: relative;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    a:hover { border-color: var(--accent); }
+
+    .highlight-box {
+      background: var(--accent-lt);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+    }
+
+    .highlight-box p {
+      color: #1a5c3a;
+      margin: 0;
+      font-size: 15px;
+    }
+
+    /* ── CONTACT CARD ── */
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      padding: 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .contact-card .icon-wrap {
+      width: 44px;
+      height: 44px;
+      background: var(--accent-lt);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 20px;
+    }
+
+    .contact-card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .contact-card p {
+      font-size: 14px;
+      color: var(--ink-soft);
+      margin: 0;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 28px 24px;
+    }
+
+    .footer-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-inner p {
+      font-size: 13px;
+      color: var(--ink-faint);
+      margin: 0;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: var(--ink-faint);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .hero { padding: 36px 20px 32px; }
+      main { padding: 36px 20px 60px; }
+      .summary { padding: 28px 20px 0; }
+      .contact-card { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <!-- Pokéball-style icon -->
+        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="10" cy="10" r="9" stroke="#fff" stroke-width="1.5" fill="none"/>
+          <path d="M1 10h18M10 10a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="logo-name">DexGuide</span>
+    </a>
+    <span class="badge">Privacy Policy</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <div class="hero-meta">
+      <span><span class="dot"></span> Effective: 1 June 2026</span>
+      <span><span class="dot"></span> Last updated: 1 June 2026</span>
+      <span><span class="dot"></span> App: DexGuide for iOS</span>
+    </div>
+  </div>
+</div>
+
+<!-- SUMMARY CARDS -->
+<div class="summary">
+  <div class="summary-grid">
+    <div class="summary-card">
+      <div class="icon">🙈</div>
+      <strong>No personal data collected</strong>
+      <p>We never ask for your name, email, or account login.</p>
+    </div>
+    <div class="summary-card">
+      <div class="icon">📵</div>
+      <strong>No ads, ever</strong>
+      <p>Zero advertising SDKs. Zero data sold to third parties.</p>
+    </div>
+    <div class="summary-card">
+      <div class="icon">📊</div>
+      <strong>Anonymous analytics only</strong>
+      <p>Event counts only — no device ID, no IP address retained.</p>
+    </div>
+    <div class="summary-card">
+      <div class="icon">☁️</div>
+      <strong>Your data stays yours</strong>
+      <p>iCloud sync goes to your personal iCloud. We never see it.</p>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main>
+
+  <section>
+    <h2>1. Who We Are</h2>
+    <p>DexGuide is an independent iOS companion app for classic Pokémon games (Generations II–IV). It is developed and maintained as an indie project. DexGuide is not affiliated with, endorsed by, or connected to Nintendo, Game Freak, or The Pokémon Company.</p>
+    <p>This policy explains what data we collect when you use DexGuide, how it is used, and your rights regarding that data. When this policy says "we", "us", or "our", it refers to the developer(s) of DexGuide.</p>
+  </section>
+
+  <section>
+    <h2>2. Data We Do NOT Collect</h2>
+    <div class="highlight-box">
+      <p>DexGuide is designed to work entirely without an account. We collect no personally identifiable information.</p>
+    </div>
+    <p>Specifically, we do not collect or store:</p>
+    <ul>
+      <li>Your name, email address, or any other contact information</li>
+      <li>Your Apple ID or any account credentials</li>
+      <li>Your precise or approximate location</li>
+      <li>Your IP address (we do not operate any servers that receive it)</li>
+      <li>Photos, camera, or microphone data</li>
+      <li>Contacts or calendar data</li>
+      <li>Health or fitness data</li>
+      <li>Any data about other apps on your device</li>
+      <li>Browsing history or search history outside the app</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Data Stored Locally on Your Device</h2>
+    <p>All user-generated content is stored locally on your device using iOS standard storage (UserDefaults, Core Data). This includes:</p>
+    <ul>
+      <li>Your selected game and app preferences</li>
+      <li>Pokémon caught / seen status (catch checklist)</li>
+      <li>Saved teams and team folders</li>
+      <li>Shiny hunt session logs and encounter counts</li>
+      <li>Nuzlocke run data (encounters, roster, death log)</li>
+      <li>Story chapter progress and item checklists</li>
+    </ul>
+    <p>This data never leaves your device unless you are a Pro subscriber with iCloud sync enabled (see Section 5).</p>
+  </section>
+
+  <section>
+    <h2>4. Analytics — Amplitude (Privacy-Preserving)</h2>
+    <p>We use <strong>Amplitude</strong> to collect anonymous, aggregated usage analytics. This helps us understand which features are useful and where the app can be improved.</p>
+    <p>What Amplitude receives:</p>
+    <ul>
+      <li>Anonymous event names (e.g. "Pokédex tab opened", "shiny hunt started")</li>
+      <li>The game you have selected (e.g. "Emerald") — stored as a user property, not linked to any identity</li>
+      <li>App version and iOS version (sent by the SDK automatically)</li>
+      <li>Session duration and event counts</li>
+    </ul>
+    <p>What Amplitude does NOT receive:</p>
+    <ul>
+      <li>Any personally identifiable information</li>
+      <li>Your name, email, or Apple ID</li>
+      <li>Your precise device identifier (IDFA/IDFV is not collected)</li>
+      <li>Your location</li>
+    </ul>
+    <p>Amplitude is configured with its EU data residency zone, meaning event data is stored in EU-based infrastructure. Amplitude's privacy policy is available at <a href="https://amplitude.com/privacy" target="_blank" rel="noopener">amplitude.com/privacy</a>.</p>
+    <p>We do not sell or share analytics data with any third party for advertising purposes.</p>
+  </section>
+
+  <section>
+    <h2>5. iCloud Sync (Pro Subscribers Only)</h2>
+    <p>If you subscribe to DexGuide Pro, your user data (teams, shiny hunts, Nuzlocke runs, caught status) is synced via <strong>Apple iCloud</strong> (CloudKit and NSUbiquitousKeyValueStore). This sync is handled entirely by Apple — the data is stored in your personal iCloud account, which we have no access to.</p>
+    <p>Apple's iCloud privacy terms are available at <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>.</p>
+    <p>iCloud sync can be disabled at any time via your iOS Settings → [Your name] → iCloud → DexGuide.</p>
+  </section>
+
+  <section>
+    <h2>6. In-App Purchases</h2>
+    <p>DexGuide Pro subscriptions and lifetime purchases are processed entirely by <strong>Apple's App Store</strong> via StoreKit 2. We do not receive, store, or process your payment information. We only receive a confirmation signal from Apple indicating whether a valid purchase exists.</p>
+    <p>Apple's App Store privacy policy governs the payment transaction: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>.</p>
+  </section>
+
+  <section>
+    <h2>7. Advertising</h2>
+    <p>DexGuide contains <strong>no advertising</strong> of any kind. We do not integrate any advertising SDK. We do not use your data to serve personalised or contextual ads, and we do not share any data with advertising networks.</p>
+  </section>
+
+  <section>
+    <h2>8. Data Sharing</h2>
+    <p>We do not sell, rent, trade, or share your personal data with third parties. The only third-party service that receives any data from the app is Amplitude (analytics, described in Section 4), and the data it receives is anonymous.</p>
+  </section>
+
+  <section>
+    <h2>9. Children's Privacy</h2>
+    <p>DexGuide is rated 4+ on the App Store and is suitable for all ages. We do not knowingly collect personal information from any user, including children under 13 (or the applicable age in your jurisdiction). Because we collect no personal data at all, DexGuide complies with the Children's Online Privacy Protection Act (COPPA) and equivalent regulations by design.</p>
+  </section>
+
+  <section>
+    <h2>10. Data Retention and Deletion</h2>
+    <p>Because all user data is stored locally on your device (or in your personal iCloud account), you are in full control:</p>
+    <ul>
+      <li><strong>Delete app data:</strong> Delete the app from your device. All local data is removed by iOS automatically.</li>
+      <li><strong>Delete iCloud data:</strong> Go to Settings → [Your name] → iCloud → Manage Storage → DexGuide → Delete Data.</li>
+      <li><strong>Anonymous analytics:</strong> Amplitude retains anonymised event data for up to 24 months. Because the data is not linked to any identity, it cannot be individually deleted. You may contact us and we will submit a deletion request to Amplitude on your behalf where technically feasible.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>11. Your Rights (GDPR / UK GDPR / CCPA)</h2>
+    <p>If you are located in the European Economic Area, the United Kingdom, California, or another jurisdiction with data protection laws, you may have the following rights. Because DexGuide collects no personal data, most of these rights apply in a limited way — but we are happy to assist:</p>
+    <ul>
+      <li><strong>Right to access:</strong> Request confirmation of what data (if any) we hold about you.</li>
+      <li><strong>Right to erasure:</strong> Request deletion of any data associated with you.</li>
+      <li><strong>Right to object:</strong> Object to any processing of your data.</li>
+      <li><strong>Right to portability:</strong> Request your data in a portable format.</li>
+      <li><strong>Right to lodge a complaint:</strong> Contact your local data protection authority if you have concerns.</li>
+    </ul>
+    <p>California residents: DexGuide does not sell personal information and does not share it for cross-context behavioural advertising. No opt-out is required, but you may contact us if you have questions.</p>
+  </section>
+
+  <section>
+    <h2>12. App Store Tracking Transparency</h2>
+    <p>DexGuide does not use the App Tracking Transparency (ATT) framework and does not request permission to track you across other companies' apps or websites. We do not track you.</p>
+  </section>
+
+  <section>
+    <h2>13. Changes to This Policy</h2>
+    <p>If we make material changes to this privacy policy, we will update the "Last updated" date at the top of this page. For significant changes, we will include a notice within the app. We encourage you to review this policy periodically.</p>
+    <p>Continued use of DexGuide after changes are posted constitutes your acceptance of the revised policy.</p>
+  </section>
+
+  <section>
+    <h2>14. Contact</h2>
+    <div class="contact-card">
+      <div class="icon-wrap">✉️</div>
+      <div>
+        <h3>Questions about this policy?</h3>
+        <p>Reach us at <a href="mailto:privacy@dexguide.app">privacy@dexguide.app</a>. We aim to respond within 7 business days.<br>
+        You can also visit <a href="https://dexguide.app" target="_blank" rel="noopener">dexguide.app</a> for support information.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>15. Disclaimer</h2>
+    <p>DexGuide is an unofficial fan application and is not affiliated with, endorsed by, or connected to Nintendo, Game Freak, or The Pokémon Company. Pokémon and all related names are trademarks of Nintendo / Creatures Inc. / GAME FREAK inc. All game data and content within DexGuide is written from scratch by DexGuide contributors and is based on publicly available information.</p>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <p>© 2026 DexGuide. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="mailto:privacy@dexguide.app">Contact</a>
+      <a href="#">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
